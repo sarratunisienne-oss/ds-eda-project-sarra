@@ -134,3 +134,6 @@ data/*.tsv
 data/*.zip
 data/*.gsv
 data/*.json
+
+models/*.pickle
+models/*.pkl

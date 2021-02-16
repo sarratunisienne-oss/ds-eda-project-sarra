@@ -16,3 +16,6 @@ source .venv/bin/activate
 pip install --upgrade pip
 pip install -r requirements.txt
 ```
+
+### Remarks
+Data or Models folder content should not be pushed to github.
