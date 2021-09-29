@@ -5,7 +5,7 @@ Template for creating ds simple projects
 ## Requirements
 
 * pyenv
-* python==3.8.5
+* python==3.9.4
 ## Setup
 
 For this purpose you use following commands:
