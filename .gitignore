@@ -128,12 +128,19 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-.DSStore
+# data
 data/*.csv
 data/*.tsv
 data/*.zip
 data/*.gsv
 data/*.json
 
+# models
 models/*.pickle
 models/*.pkl
+
+# Mac Stuff
+.DS_Store
+
+# vscode Stuff
+.vscode
