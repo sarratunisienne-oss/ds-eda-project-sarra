@@ -1,11 +1,12 @@
 # ds-project-template
-Template for creating ds simple projects 
 
+Template for creating ds simple projects
 
 ## Requirements
 
-* pyenv
-* python==3.9.4
+- pyenv
+- python==3.9.4
+
 ## Setup
 
 For this purpose you use following commands:
@@ -17,5 +18,12 @@ pip install --upgrade pip
 pip install -r requirements.txt
 ```
 
-### Remarks
-Data or Models folder content should not be pushed to github.
+### Unit testing (Optional)
+
+If you write python scripts for your data processing methods, you can also write unit tests. In order to run the tests execute in terminal:
+
+```bash
+pytest
+```
+
+This command will execute all the functions in your project that start with the word **test**.

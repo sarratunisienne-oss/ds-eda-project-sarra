@@ -1,68 +1,55 @@
 # First Project - Data Analysis
 
 This project is centered around exploratory data
-analysis [(EDA)](https://github.com/neuefische/datascience-infographics/blob/main/EDA_Checklist.md) techniques and statistical analysis,
-as well as modeling data using linear regression.
+analysis techniques and presentation of results to a stakeholder.
 
-## Topic and Task
+**Once you start working please follow the [workflow](workflow.md) to help you achieve the tasks successfully!**
 
-You will use the King County Housing Data:
-This dataset contains information about home sales in King County (USA).
+# The data
 
-Your task will be to perform an extensive EDA and to train a explanatory linear regression model. The task is not only to explain the data but also to evaluate how well the model is fitting the data.
-
-## The data
-
+- You will use the King County Housing Data: This dataset contains information about home sales in King County (USA).
 - The dataset will be provide, please copy it in the data folder where it will not be uploaded to github.
-- The description of the column names can be found in the `column_names.md` files.
+- The description of the column names can be found in the `column_names.md` file.
 - The column names may NOT be clear at times:
 
   _In the real world we will run into similar challenges. We would then go ask our business stakeholders for more information. In this case, let us assume our business stakeholder who would give us information, left the company. Meaning we would have to identify and look up what each column names might actually mean. (google is your friend ;) )_
 
-## Tasks for you
+# The Tasks
 
 1. Create a new repo using this [template](hhttps://github.com/neuefische/ds-eda-project-template).
 
-2. Through EDA/statistical analysis above please come up with **AT LEAST 3insights/recommendations** for your stakeholder.
-   Note, you can take either the perspective of a buyer or a seller. Choose a stakeholder from the list at the end of this file.
-   If you use linear regression in the exploration phase remember that R2 close to 1 is good.
+2. Through EDA/statistical analysis above please come up with **AT LEAST 3 insights** regarding the overall data. One should be geographical.
 
-3. Then, model this dataset with a linear regression to explain the data but also to evaluate how well the model is fitting the data. We do expect **residuals** plotted for the model.
+3. In addition also come up with **AT LEAST 3 recommendations** for your stakeholder.
 
-## Suggested workflow - POC
+_Note, you can take either the perspective of a buyer or a seller. Choose a stakeholder from the list at the end of this file._
 
-The work is timeboxed, and with that in mind, you need to change how you approach the task. You will want to employ an iterative approach.
-
-- write rough draft of plan with placeholders
-- do simple plots
-- main questions should already be answered -> POC (proof of concept)
-- iterate: go deeper, go prettier, go better
-- clean up .. feel free to delete things that are not useful anymore
-
-## The Deliverables
+# The Deliverables
 
 0. **New repository** from [template](https://github.com/neuefische/ds-eda-project-template)
-1. A **well documented Jupyter Notebook** (see [here](https://www.kaggle.com/ekami66/detailed-exploratory-data-analysis-with-python) for an example) containing the code you've written for this project and comments explaining it. This work will need to be pushed to your GitHub repository in order to submit your project. Do not push all the analysis... just the analysis that is relevant!
-2. An **organized README.md** file in the GitHub repository that describes the contents of the repository. This file should be the source of information for navigating through the repository.
-3. A **short Keynote/PowerPoint/Google Slides/Jupyter slides presentation** giving a **high-level overview** of your methodology and recommendations for **non-technical stakeholders**. The duration of the presentation should be **10 minutes**, then the discussion will continue for 5 minutes. Also put your slides (delivered as a PDF export) on Github to get a well-rounded project.
-4. _Optional_ - A Python script for training the model, printing out the model statistics and saving the model. Look at this [stackoverflow discussion](https://stackoverflow.com/questions/16420407/python-statsmodels-ols-how-to-save-learned-model-to-file) on how to save a statsmodel.
+1. A **well documented Jupyter Notebook** (see [here](https://www.kaggle.com/ekami66/detailed-exploratory-data-analysis-with-python) for an example) containing the code you've written for this project and comments explaining it. This work will need to be pushed to your GitHub repository in order to submit your project. Do not push all the analysis... just the analysis that is relevant! You can start with the [starter notebook](EDA.ipynb).
+2. An **updated and organized README.md** file in the GitHub repository that describes the contents of the repository. This file should be the source of information for navigating through the repository.
+3. A **short Keynote/PowerPoint/Google Slides/Jupyter slides presentation** giving a **high-level overview** of your methodology and recommendations for **non-technical stakeholders**. The duration of the presentation should be **10 minutes**, then the discussion will continue for 5 minutes. Also put your slides (delivered as a PDF export) on Github to get a well-rounded project. **Do not present using your jupyter notebook!**
+4. _Optional_ - A Python script for processing and cleaning your data, here feel free to write clean code, using functions and docstrings. Even more optional you can also do unit tests. If you do this part, you may also update your EDA notebook to make use of these functions. See (optional)[optional] folder for example.
 
-## Stakeholders
+# The Stakeholders
 
-- We get to know our stakeholders:
+- Please chose a stakeholder.
 
-| Name                | Stakeholder | Characteristics                                                                                                                                                                  |
-| ------------------- | ----------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Thomas Hansen       | Buyer       | 5 kids, no money, wants nice (social) neighbourhood, Timing?, Location?                                                                                                          |
-| Charles Christensen | Seller      | Invest with big returns, wondering about renovation?, which Neighbourhood? Timing?                                                                                               |
-| Bonnie Brown        | Seller      | Has house and wants to move soon (timing?), but wants high profit in middle class NH (neighborhood)                                                                              |
-| Larry Sanders       | Buyer       | Waterfront , limited budget, nice & isolated but central neighbourhood without kids (but got some of his own, just doesn't his kids to play with other kids .. because of germs) |
-| Nicole Johnson      | Buyer       | Lively, central neighbourhood, middle price range, right timing (within a year)                                                                                                  |
-| Jennifer Montgomery | Buyer       | High budget, wants to show off, timing within a month, waterfront, renovated, high grades, resell within 1 year                                                                  |
-| Bonnie Williams     | Seller      | Has several houses, some in bad neighbourhoods, willing to evict people, timing?, big returns, open for renovations                                                              |
-| William Rodriguez   | Buyer       | 2 people, country (best timing & unrenovated) & city house (fast & central location), wants two houses                                                                           |
-| Erin Robinson       | Buyer       | Invest in poor neighbourhood, buying & selling, costs back + little profit, socially responsible                                                                                 |
-| Jacob Phillips      | Buyer       | Unlimited Budget, 4+ bathrooms or smaller house nearby, big lot (tennis court & pool), golf, historic, no waterfront                                                             |
-| Zachary Brooks      | Seller      | Invests in historical houses, best NHs, high profits, best timing within a year, should renovate?                                                                                |
-| Timothy Stevens     | Seller      | Owns expensive houses, needs to get rid, best timing within a year, open for renovation when profits rise                                                                        |
-| Amy Williams        | Seller      | Italian mafiosi, sells several central houses(top10%) over time, needs average outskirt houses over time to hide from the FBI                                                    |
+_Note: As these stakeholders are made up (any resemblance to present people is absolutely random), please make assumptions about answers they would give to your questions. (i.e. How do you define a rich neighborhood? take the zipcodes with most houses in upper 10% percentile..). Whatever assumptions you make, please write them explicitly in your presentation and notebook._
+
+| Name                | Stakeholder | Characteristics                                                                                                                                                                 |
+| ------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Thomas Hansen       | Buyer       | 5 kids, no money, wants nice (social) neighborhood, Timing?, Location?                                                                                                          |
+| Charles Christensen | Seller      | Invest with big returns, wondering about renovation?, which Neighborhood? Timing?                                                                                               |
+| Bonnie Brown        | Seller      | Has house and wants to move soon (timing?), but wants high profit in middle class NH (neighborhood)                                                                             |
+| Larry Sanders       | Buyer       | Waterfront , limited budget, nice & isolated but central neighborhood without kids (but got some of his own, just doesn't his kids to play with other kids .. because of germs) |
+| Nicole Johnson      | Buyer       | Lively, central neighborhood, middle price range, right timing (within a year)                                                                                                  |
+| Jennifer Montgomery | Buyer       | High budget, wants to show off, timing within a month, waterfront, renovated, high grades year                                                                                  |
+| Bonnie Williams     | Seller      | Has several houses, some in bad neighborhoods, willing to evict people, timing?, big returns, open for renovations                                                              |
+| William Rodriguez   | Buyer       | 2 people, country (best timing & non-renovated) & city house (fast & central location), wants two houses                                                                        |
+| Erin Robinson       | Buyer       | Invest in poor neighborhood, buying & selling, costs back + little profit, socially responsible                                                                                 |
+| Jacob Phillips      | Buyer       | Unlimited Budget, 4+ bathrooms or smaller house nearby, big lot (tennis court & pool), golf, historic, no waterfront                                                            |
+| Zachary Brooks      | Seller      | Invests in historical houses, best neighborhoods, high profits, best timing within a year, should renovate?                                                                     |
+| Timothy Stevens     | Seller      | Owns expensive houses in the center, needs to get rid, best timing within a year, open for renovation when profits rise                                                         |
+| Amy Williams        | Seller      | Italian mafiosi, sells several central houses(top10%) over time, needs average outskirt houses over time to hide from the FBI                                                   |
