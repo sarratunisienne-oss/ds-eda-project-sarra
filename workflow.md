@@ -41,13 +41,13 @@ This is a recommended workflow, especially for people who are on their beginning
 ### Research Questions and Hypothesis Generation
 
 - *Research Questions* are questions that arise from a researcher guessing about reality (data). They are written in the form of a question.
-- *Hypotheses* are assumptions or educated guesses we make about the data, using our domain knowledge. You can form the hypotheses in the form of *"if/then"* or *"the more the"*. A Hypothesis is formed as a measurable (operationisable) statement you can validate by e.g. looking at data.
-- A Research Question can have multiple hypothesis attached to it.
+- *Hypotheses* are assumptions or educated guesses we make about the data, using our domain knowledge. You can form a hypothesis in the form of *"if/then"* or *"the more the"*. A Hypothesis is formed as a measurable (operationisable) statement you can validate by looking at data.
+- A research question can have multiple hypotheses attached to it.
 ```
 +------------------------------------------------+-------------------------------------------------------------------+----------------------+
-| Question                                       | Hypothesis                                                        | Indicators           |
+| Question                                       | Hypotheses                                                        | Indicators           |
 +------------------------------------------------+-------------------------------------------------------------------+----------------------+
-| Does the location of a house affect the price? |  1. The closer a house is to the city center, the higher the price| - geolocation        |
+| Does the location of a house affect the price? | 1. The closer a house is to the city center, the higher the price| - geolocation        |
 |                                                +-------------------------------------------------------------------+----------------------+
 |                                                | 2. If a house is located to water, then the price is higher       | - waterfront(yes/no) |
 +------------------------------------------------+-------------------------------------------------------------------+----------------------+
