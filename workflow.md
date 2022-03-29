@@ -38,9 +38,21 @@ This is a recommended workflow, especially for people who are on their beginning
 - Check for missing values. Are they concentrated in some column or in some observations?
 - Check which features are continuous or categorical.
 
-### Hypothesis Generation
+### Research Questions and Hypothesis Generation
 
-- Hypotheses are assumptions or educated guesses we make about the data, using our domain knowledge. You can form the hypotheses as questions and the more you have the easier and more focused your EDA can be. For more examples check this [article](https://www.analyticsvidhya.com/blog/2020/11/an-efficient-way-of-performing-eda-hypothesis-generation/).
+- *Research Questions* are questions that arise from a researcher guessing about reality (data). They are written in the form of a question.
+- *Hypotheses* are assumptions or educated guesses we make about the data, using our domain knowledge. You can form a hypothesis in the form of *"if/then"* or *"the more the"*. A Hypothesis is formed as a measurable (operationisable) statement you can validate by looking at data.
+- A research question can have multiple hypotheses attached to it.
+```
++------------------------------------------------+-------------------------------------------------------------------+----------------------+
+| Question                                       | Hypotheses                                                        | Indicators           |
++------------------------------------------------+-------------------------------------------------------------------+----------------------+
+| Does the location of a house affect the price? | 1. The closer a house is to the city center, the higher the price| - geolocation        |
+|                                                +-------------------------------------------------------------------+----------------------+
+|                                                | 2. If a house is located to water, then the price is higher       | - waterfront(yes/no) |
++------------------------------------------------+-------------------------------------------------------------------+----------------------+
+```
+- The more concrete questions and related hypothesis you have, the easier and more focused your EDA can be. For more examples check this [article](https://www.analyticsvidhya.com/blog/2020/11/an-efficient-way-of-performing-eda-hypothesis-generation/).
 - Ask yourself some questions about the data, the more the merrier. (e.g. Does the larger size of a house increase the price? Are houses in the South of the region more expensive?). In this step ask at least 3 questions.
 - Thinking of the stakeholder, think of a couple of hypotheses that fit to their portion of the data. For some stakeholder not all the data will be relevant, e.g. the ones interested in houses in the city center might not care about the suburbs.
 
