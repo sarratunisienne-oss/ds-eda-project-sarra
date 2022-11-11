@@ -49,9 +49,9 @@ SELECT "date",price,id AS house_id FROM king_county_house_prices_full
 ALTER TABLE king_county_house_sales
 ADD COLUMN id serial PRIMARY KEY;
 
-SELECT * FROM king_county_house_sales;
-
-DROP TABLE king_county_house_sales;
+--testing
+--SELECT * FROM king_county_house_sales;
+--DROP TABLE king_county_house_sales;
 
 
 --create table with house details data
