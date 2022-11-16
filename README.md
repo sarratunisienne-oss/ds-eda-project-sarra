@@ -34,3 +34,13 @@ pytest
 ```
 
 This command will execute all the functions in your project that start with the word **test**.
+
+In order to install the environment you can use the following commands:
+
+```
+pyenv local 3.9.8
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+```
