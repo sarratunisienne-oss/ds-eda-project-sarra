@@ -1,6 +1,8 @@
+--create schema and set it to be the one against which queries are run
+
 CREATE SCHEMA eda;
 
-SET search_path TO eda;
+Set schema 'eda';
 
 --create the full table containing all of the data the csv file has
 CREATE TABLE king_county_house_prices_full(
@@ -27,12 +29,15 @@ sqft_living15 float(8),
 sqft_lot15 float(8)
 );
 
+--I've used the wizard to import the data. Make sure to select 'BULK' load mode
+
 --testing
 --SELECT * FROM king_county_house_prices_full;
 --DROP TABLE king_county_house_prices_full;
 
---used the gui to upload the csv file to the table
 
+
+--Split the full dataset into 2 tables - king_county_house_details and king_county_house_sales
 
 --create table with house sales
 CREATE TABLE king_county_house_sales (
@@ -93,16 +98,33 @@ FROM
 where t.row_num = 1
 );
 
---testing
---SELECT * 
---FROM king_county_house_details kchd ;
-
---DROP TABLE king_county_house_details ;
 
 
+--create primary and foreign keys and add constraints
+ALTER TABLE king_county_house_details
+        ALTER COLUMN id TYPE bigint USING id::bigint
+        ;
 
+ALTER TABLE king_county_house_details
+	ADD CONSTRAINT id PRIMARY KEY (id);
+       
+       
+ALTER TABLE king_county_house_sales
+        ALTER COLUMN house_id TYPE bigint USING house_id::bigint
+        ;
 
+ALTER TABLE king_county_house_sales
+        ADD constraint house_id_fk FOREIGN KEY (house_id) references king_county_house_details(id)
+        ;
 
+--test       
+select *
+from king_county_house_details kchd 
+left join king_county_house_sales kchs 
+on kchd.id = kchs.house_id;
+
+--drop the original table containing all of the information
+drop table king_county_house_prices_full ;
 
 
 
