@@ -8,3 +8,4 @@ seaborn==0.11.1
 python-dotenv==0.19.0
 psycopg2==2.9.3
 SQLAlchemy==1.4.25
+missingno==0.5.1
