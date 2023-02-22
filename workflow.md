@@ -2,11 +2,11 @@
 
 ## Objective
 
-The exploratory data analysis provides immediate value to the stakeholders, as it provides information about how various features are influencing the target variable (in this case the prices of houses). Furthermore the data visualization generated in this stage can be of use in presentations. A good EDA is the foundation step of further modeling stages and also has direct impact on the quality of models produced later on.
+The exploratory data analysis provides immediate value to the clients, as it provides information about how various features are influencing the target variable (in this case the prices of houses). Furthermore the data visualization generated in this stage can be of use in presentations. A good EDA is the foundation step of further modeling stages and also has direct impact on the quality of models produced later on.
 
 One of the famous sayings about working with data, is "garbage in, garbage out"; so the first thing you want to do before you analyse the data and draw conclusions, is to understand it and make sure your data is as clean as possible.
 
-Data cleaning and data wrangling usually can account for up to 70% of the data scientist work. Your objective here would be to examine and preprocess the dataset. Your stakeholder wants to get a good understanding of the general housing condition in Seattle and surroundings and furthermore to have some recommendations tailored to their needs.
+Data cleaning and data wrangling usually can account for up to 70% of the data scientist work. Your objective here would be to examine and preprocess the dataset. Your client wants to get a good understanding of the general housing condition in Seattle and surroundings and furthermore to have some recommendations tailored to their needs.
 
 ![](https://thumbor.forbes.com/thumbor/711x302/https://blogs-images.forbes.com/gilpress/files/2016/03/Time-1200x511.jpg?width=960)
 
@@ -54,7 +54,7 @@ This is a recommended workflow, especially for people who are on their beginning
 ```
 - The more concrete questions and related hypothesis you have, the easier and more focused your EDA can be. For more examples check this [article](https://www.analyticsvidhya.com/blog/2020/11/an-efficient-way-of-performing-eda-hypothesis-generation/).
 - Ask yourself some questions about the data, the more the merrier. (e.g. Does the larger size of a house increase the price? Are houses in the South of the region more expensive?). In this step ask at least 3 questions.
-- Thinking of the stakeholder, think of a couple of hypotheses that fit to their portion of the data. For some stakeholder not all the data will be relevant, e.g. the ones interested in houses in the city center might not care about the suburbs.
+- Thinking of the client, think of a couple of hypotheses that fit to their portion of the data. For some client not all the data will be relevant, e.g. the ones interested in houses in the city center might not care about the suburbs.
 
 ### Exploring the data
 
@@ -81,12 +81,12 @@ This is a recommended workflow, especially for people who are on their beginning
 - Do not forget to document your work, use markdown cells in the notebook to explain what you do, why you do it and interpret the results.
 - For every plot you have, there should be at least a sentence saying what you see in it 🤓
 - There is an expected format to your presentation following specific questions:
-  - who are you, who is your stakeholder
+  - who are you, who is your client
   - what data are you working on (time span, location, size)
   - data overview
   - introducing your 3 main hypotheses
   - the results of the analysis of the hypotheses (visual/statistical)
-  - insights and recommendations for stakeholder
+  - insights and recommendations for client
   - Check this out for more tips on [how to make great data science presentations](https://towardsdatascience.com/how-to-make-your-data-science-presentation-great-and-memorable-8fdb07978a7e)
 
 For more information regarding the image bellow check out the [EDA Checklist](https://github.com/neuefische/datascience-infographics/blob/main/EDA_Checklist.md) .

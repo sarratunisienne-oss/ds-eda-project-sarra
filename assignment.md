@@ -1,7 +1,7 @@
 # First Project - Data Analysis
 
 This project is centered around exploratory data
-analysis techniques and presentation of results to a stakeholder.
+analysis techniques and presentation of results to a client.
 
 **Once you start working please follow the [workflow](workflow.md) to help you achieve the tasks successfully!**
 
@@ -12,7 +12,7 @@ analysis techniques and presentation of results to a stakeholder.
 - The description of the column names can be found in the `column_names.md` file.
 - The column names may NOT be clear at times:
 
-  _In the real world we will run into similar challenges. We would then go ask our business stakeholders for more information. In this case, let us assume our business stakeholder who would give us information, left the company. Meaning we would have to identify and look up what each column names might actually mean. (google is your friend ;) )_
+  _In the real world we will run into similar challenges. We would then go ask our business clients for more information. In this case, let us assume our business client who would give us information, left the company. Meaning we would have to identify and look up what each column names might actually mean. (google is your friend ;) )_
 
 # The Tasks
 
@@ -20,25 +20,25 @@ analysis techniques and presentation of results to a stakeholder.
 
 2. Through EDA/statistical analysis above please come up with **AT LEAST 3 insights** regarding the overall data. One should be geographical.
 
-3. In addition also come up with **AT LEAST 3 recommendations** for your stakeholder.
+3. In addition also come up with **AT LEAST 3 recommendations** for your client.
 
-_Note, you can take either the perspective of a buyer or a seller. Choose a stakeholder from the list at the end of this file._
+_Note, you can take either the perspective of a buyer or a seller. Choose a client from the list at the end of this file._
 
 # The Deliverables
 
 0. **New repository** from [template](https://github.com/neuefische/ds-eda-project-template)
 1. A **well documented Jupyter Notebook** (see [here](https://www.kaggle.com/ekami66/detailed-exploratory-data-analysis-with-python) for an example) containing the code you've written for this project and comments explaining it. This work will need to be pushed to your GitHub repository in order to submit your project. Do not push all the analysis... just the analysis that is relevant! You can start with the [starter notebook](EDA.ipynb).
 2. An **updated and organized README.md** file in the GitHub repository that describes the contents of the repository. This file should be the source of information for navigating through the repository.
-3. A **short Keynote/PowerPoint/Google Slides/Jupyter slides presentation** giving a **high-level overview** of your methodology and recommendations for **non-technical stakeholders**. The duration of the presentation should be **10 minutes**, then the discussion will continue for 5 minutes. Also put your slides (delivered as a PDF export) on Github to get a well-rounded project. **Do not present using your jupyter notebook!**
+3. A **short Keynote/PowerPoint/Google Slides/Jupyter slides presentation** giving a **high-level overview** of your methodology and recommendations for **non-technical clients**. The duration of the presentation should be **10 minutes**, then the discussion will continue for 5 minutes. Also put your slides (delivered as a PDF export) on Github to get a well-rounded project. **Do not present using your jupyter notebook!**
 4. _Optional_ - A Python script for processing and cleaning your data, here feel free to write clean code, using functions and docstrings. Even more optional you can also do unit tests. If you do this part, you may also update your EDA notebook to make use of these functions. See (optional)[optional] folder for example.
 
-# The Stakeholders
+# The clients
 
-- Please chose a stakeholder.
+- Please chose a client.
 
-_Note: As these stakeholders are made up (any resemblance to present people is absolutely random), please make assumptions about answers they would give to your questions. (i.e. How do you define a rich neighborhood? take the zipcodes with most houses in upper 10% percentile..). Whatever assumptions you make, please write them explicitly in your presentation and notebook._
+_Note: As these clients are made up (any resemblance to present people is absolutely random), please make assumptions about answers they would give to your questions. (i.e. How do you define a rich neighborhood? take the zipcodes with most houses in upper 10% percentile..). Whatever assumptions you make, please write them explicitly in your presentation and notebook._
 
-| Name                | Stakeholder | Characteristics                                                                                                                                                                 |
+| Name                | client | Characteristics                                                                                                                                                                 |
 | ------------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Thomas Hansen       | Buyer       | 5 kids, no money, wants nice (social) neighborhood, Timing?, Location?                                                                                                          |
 | Charles Christensen | Seller      | Invest with big returns, wondering about renovation?, which Neighborhood? Timing?                                                                                               |
