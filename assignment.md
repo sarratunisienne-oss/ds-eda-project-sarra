@@ -8,7 +8,7 @@ analysis techniques and presentation of results to a client.
 # The data
 
 - You will use the King County Housing Data: This dataset contains information about home sales in King County (USA).
-- You will find the data in the eda schema. Please save the csv file in the data folder where it will not be uploaded to github.
+- You will find the data in the eda schema of our database. You can access it via DBeaver. Please save the csv file in the data folder where it will not be uploaded to github.
 - The description of the column names can be found in the `column_names.md` file.
 - The column names may NOT be clear at times:
 
