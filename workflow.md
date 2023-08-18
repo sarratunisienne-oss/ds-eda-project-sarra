@@ -87,7 +87,7 @@ This is a recommended workflow, especially for people who are on their beginning
   - introducing your 3 main hypotheses
   - the results of the analysis of the hypotheses (visual/statistical)
   - insights and recommendations for client
-  - Check this out for more tips on [how to make great data science presentations](https://towardsdatascience.com/how-to-make-your-data-science-presentation-great-and-memorable-8fdb07978a7e)
+  - Check this out for more tips on [how to make great data science presentations](https://www.dataknowsall.com/storytelling.html)
 
 For more information regarding the image bellow check out the [EDA Checklist](https://github.com/neuefische/datascience-infographics/blob/main/EDA_Checklist.md) .
 
