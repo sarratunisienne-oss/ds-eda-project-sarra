@@ -42,7 +42,7 @@ This repo contains a requirements.txt file with a list of all the packages and d
 
 ```bash
 brew update
-brew install postgresql
+brew install postgresql@14
 ```
 
 In order to install the environment you can use the following commands:
