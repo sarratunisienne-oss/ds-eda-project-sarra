@@ -128,7 +128,7 @@ Before you can start with plotly in Jupyter Lab you have to install node.js (if 
     * Replace 14 with your PostgreSQL version if it's different.
 
     ```PowerShell
-    setx path "%path%;C:\Program Files\PostgreSQL\14\bin"
+    setx PATH "$($env:PATH);C:\Program Files\PostgreSQL\14\bin"
     ```
   * Close the Administrator Command Prompt window.
 
