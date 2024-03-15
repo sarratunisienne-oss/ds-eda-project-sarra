@@ -138,7 +138,7 @@ jobs:
         shell: bash
         run: |
             brew update
-            brew install node
+            # brew install node
             node -v          
 
       - name: Create import_libraries_test.py from Notebooks 
