@@ -15,18 +15,14 @@ rm -f "$PYTHON_FILE"
 # Search for *.ipynb files recursively in all folders
 find . -type f -name '*.ipynb' -print0 |
     while IFS= read -r -d '' file; do
-        # Extract import statements from Jupyter notebooks
-        # nbgrep "(from\s+\w+\s+import\s+(\*|\w+)(\s+as\s+\w+)?|(import\s+(\*|\w+)(\s+as\s+\w+)?(,\s*(\w+|\*))*)+)\s*(#.*)?$" "$file" | grep -v 'nbgrep:' | awk -F ':' '{sub(/^[^:]*:[^:]*:line [0-9]+:/, " ", $0)}1' 
-        
-        # new one catch the import xx.x as y
-        # nbgrep "(?:from\s+(\w+(?:\.\w+)*)\s+import\s+(\*|\w+)(?:\s+as\s+\w+)?(?:,\s*\w+(?:\s+as\s+\w+)?)*|import\s+(\w+(?:\.\w+)*)\s+as\s+\w+(?:,\s*\w+(?:\s+as\s+\w+)?)*)" "$file" | grep -v 'nbgrep:' | awk -F ':' '{sub(/^[^:]*:[^:]*:line [0-9]+:/, " ", $0)}1'
-       
+        # Extract import statements from Jupyter notebooks               
         # new one catch the import xx.x as y and removing the space
-        nbgrep "(?:from\s+(\w+(?:\.\w+)*)\s+import\s+(\*|\w+)(?:\s+as\s+\w+)?(?:,\s*\w+(?:\s+as\s+\w+)?)*|import\s+(\w+(?:\.\w+)*)\s+as\s+\w+(?:,\s*\w+(?:\s+as\s+\w+)?)*)" "$file" | grep -v 'nbgrep:' | awk -F ':' '{sub(/^[^:]*:[^:]*:line [0-9]+:/, " ", $0)}1'| sed 's/^[[:space:]]*//'
+        # nbgrep "(?:from\s+(\w+(?:\.\w+)*)\s+import\s+(\*|\w+)(?:\s+as\s+\w+)?(?:,s*\w+(?:\\s+as\s+\w+)?)*|import\s+(\w+(?:\.\w+)*)\s+as\s+\w+(?:,\s*\w+(?:\s+as\s+\w+)?)*)" "$file" | grep -v 'nbgrep:' | awk -F ':' '{sub(/^[^:]*:[^:]*:line [0-9]+:/, " ", $0)}1'| sed 's/^[[:space:]]*//'
+        nbgrep "(?:from\s+(\w+(?:\.\w+)*)\s+import\s+(\*|\w+)(?:\s+as\s+\w+)?(?:,\s*\w+(?:\s+as\s+\w+)?)*|import\s+(\w+(?:\.\w+)*)\s+as\s+\w+(?:,\s*\w+(?:\s+as\s+\w+)?)*)|(?:^|\n)import\s+(\w+(?:\.\w+)*)\s+" "$file" | grep -v 'nbgrep:' | awk -F ':' '{sub(/^[^:]*:[^:]*:line [0-9]+:/, " ", $0)}1'| sed 's/^[[:space:]]*//'
 
 
     done | sort -u > "$PYTHON_FILE"
-echo "All extract import statements from Jupyter notebooks ....."
+echo "<<<<<<< All extract import statements from Jupyter notebooks >>>>>>"
 cat  "$PYTHON_FILE"
 
 
