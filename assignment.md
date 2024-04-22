@@ -53,4 +53,4 @@ _Note: As these clients are made up (any resemblance to present people is absolu
 | Jacob Phillips      | Buyer       | Unlimited Budget, 4+ bathrooms or smaller house nearby, big lot (tennis court & pool), golf, historic, no waterfront                                                            |
 | Zachary Brooks      | Seller      | Invests in historical houses, best neighborhoods, high profits, best timing within a year, should renovate?                                                                     |
 | Timothy Stevens     | Seller      | Owns expensive houses in the center, needs to get rid, best timing within a year, open for renovation when profits rise                                                         |
-| Amy Williams        | Seller      | Italian mafiosi, sells several central houses(top10%) over time, needs average outskirt houses over time to hide from the FBI                                                   |
+| Amy Williams        | Seller      | Mafiosi, sells several central houses(top10%) over time, needs average outskirt houses over time to hide from the FBI                                                   |
