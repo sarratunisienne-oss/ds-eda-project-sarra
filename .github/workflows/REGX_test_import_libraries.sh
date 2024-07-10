@@ -41,3 +41,4 @@ echo "    assert True" >> "$PYTHON_FILE.tmp"
 
 # Move the temporary file to the final location
 mv "$PYTHON_FILE.tmp" "$PYTHON_FILE"
+cat  "$PYTHON_FILE"
