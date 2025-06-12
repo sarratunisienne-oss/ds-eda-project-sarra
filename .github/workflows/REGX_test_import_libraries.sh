@@ -27,7 +27,7 @@ cat  "$PYTHON_FILE"
 
 
 # Generate test function in test.py
-echo "#!/usr/bin/env python" > "$PYTHON_FILE.tmp"
+# echo "#!/usr/bin/env python" > "$PYTHON_FILE.tmp"
 echo "" >> "$PYTHON_FILE.tmp"
 echo "def test_import_libraries():" >> "$PYTHON_FILE.tmp"
 echo "    try:" >> "$PYTHON_FILE.tmp"

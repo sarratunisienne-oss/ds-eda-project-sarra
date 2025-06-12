@@ -20,7 +20,7 @@ jobs:
     strategy:
       matrix:
         os: [ ubuntu-22.04, ubuntu-20.04] 
-        python-version: [3.11.3] 
+        python-version: [3.11.3,3.12] 
 
 ## The actions
     steps:
@@ -71,7 +71,7 @@ jobs:
     strategy:
       matrix:
         os: [windows-2022, windows-2019]
-        python-version: [3.11.3]
+        python-version: [3.11.3,3.12]
 
     steps:
       - name: Checkout code
@@ -133,7 +133,7 @@ jobs:
     strategy:
       matrix:
         os: [macos-latest,macos-13]
-        python-version: [3.11.3] 
+        python-version: [3.11.3,3.12] 
 
     steps:
       - name: Checkout code
@@ -184,7 +184,7 @@ jobs:
     strategy:
       matrix:
         os: [macos-14] #[flyci-macos-large-latest-m1,flyci-macos-large-latest-m2] # Price on FlyC (https://github.com/apps/flyci-prod) (https://github.com/actions/runner-images)
-        python-version: [3.11.3]
+        python-version: [3.11.3,3.12]
 
     steps:
       - name: Checkout code
