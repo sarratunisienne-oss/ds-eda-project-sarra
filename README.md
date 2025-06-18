@@ -82,7 +82,7 @@ Before you can start with plotly in Jupyter Lab you have to install node.js (if 
     pyenv local 3.11.3
     python -m venv .venv
     .venv\Scripts\Activate.ps1
-    pip install --upgrade pip
+    python -m pip install --upgrade pip
     pip install -r requirements.txt
     ```
 
@@ -92,14 +92,7 @@ Before you can start with plotly in Jupyter Lab you have to install node.js (if 
     pyenv local 3.11.3
     python -m venv .venv
     source .venv/Scripts/activate
-    pip install --upgrade pip
+    python -m pip install --upgrade pip
     pip install -r requirements.txt
     ```
  
-
- **`Note:`**
-    If you encounter an error when trying to run `pip install --upgrade pip`, try using the following command:
-
-   ```Bash
-   python.exe -m pip install --upgrade pip
-   ```
