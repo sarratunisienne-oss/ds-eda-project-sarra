@@ -32,15 +32,3 @@ pip freeze > requirements.txt
 --- 
 ## In-Case of Failure
 If you fail to do the setup by yourself, then please revisit the previous repositories where you have done the setup and follow those steps.
-
-
-### Unit testing (Optional)
-
-If you write python scripts for your data processing methods, you can also write unit tests. In order to run the tests execute in terminal:
-
-```bash
-pytest
-```
-
-This command will execute all the functions in your project that start with the word **test**.
-
