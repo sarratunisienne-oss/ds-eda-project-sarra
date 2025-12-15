@@ -31,7 +31,6 @@ _Note, you can take either the perspective of a buyer or a seller. Choose a clie
 1. A **well documented Jupyter Notebook** (see [here](https://www.kaggle.com/ekami66/detailed-exploratory-data-analysis-with-python) for an example) containing the code you've written for this project and comments explaining it. This work will need to be pushed to your GitHub repository in order to submit your project. Do not push all the analysis... just the analysis that is relevant! You can start with the [starter notebook](EDA.ipynb).
 2. An **updated and organized README.md** file in the GitHub repository that describes the contents of the repository. This file should be the source of information for navigating through the repository.
 3. A **short Keynote/PowerPoint/Google Slides/Jupyter slides presentation** giving a **high-level overview** of your methodology and recommendations for **non-technical clients**. The duration of the presentation should be **10 minutes**, then the discussion will continue for 5 minutes. Also put your slides (delivered as a PDF export) on Github to get a well-rounded project. **Do not present using your jupyter notebook!**
-4. _Optional_ - A Python script for processing and cleaning your data, here feel free to write clean code, using functions and docstrings. Even more optional you can also do unit tests. If you do this part, you may also update your EDA notebook to make use of these functions. See [optional](optional) folder for example.
 
 # The clients
 
